@@ -31,7 +31,6 @@ public class HelloRotationSpeedSystem : JobComponentSystem
         {
             dT = Time.deltaTime
         };
-
         return job.Schedule(this, inputDependencies);
     }
 }
