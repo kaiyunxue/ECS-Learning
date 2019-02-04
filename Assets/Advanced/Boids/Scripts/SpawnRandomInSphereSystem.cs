@@ -87,23 +87,23 @@ namespace Samples.Common
 
                 GeneratePoints.RandomPointsInSphere(center, radius, ref spawnPositions);
 
-                EntityManager.Instantiate(prefab, entities);
+                //EntityManager.Instantiate(prefab, entities);
 
-                for (int i = 0; i < count; i++)
-                {
-                    var position = new Position
-                    {
-                        Value = spawnPositions[i]
-                    };
-                    EntityManager.SetComponentData(entities[i], position);
-                }
+                //for (int i = 0; i < count; i++)
+                //{
+                //    var position = new Position
+                //    {
+                //        Value = spawnPositions[i]
+                //    };
+                //    EntityManager.SetComponentData(entities[i], position);
+                //}
 
-                EntityManager.RemoveComponent<SpawnRandomInSphere>(sourceEntity);
+                //EntityManager.RemoveComponent<SpawnRandomInSphere>(sourceEntity);
 
-                spawnPositions.Dispose();
-                entities.Dispose();
+                //spawnPositions.Dispose();
+                //entities.Dispose();
             }
-            spawnInstances.Dispose();
+            //spawnInstances.Dispose();
         }
     }
 }
